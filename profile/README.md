@@ -8,10 +8,10 @@ To join the hackathon please head over to the [registration form](https://www.be
 Make sure all your team members also register with the same team name.
 
 ### Start Building
-Once you have registered you will be given access to the GitHub and Slack accounts for the hackathon. Each team has a prive Git repository to which you need to push all your code. You can use multiple branches to test different algorithms but only the score for code in the `main` branch will be submitted.
+Once you have registered you will be given access to the GitHub and Slack accounts for the hackathon. Each team has a private Git repository to which you need to push all your code. You can use multiple branches to test different algorithms but only the score for code in the `main` branch will be submitted.
 
 ### Automatic Testing
-Your solution will be tested each time you push code to GitHub or create a pull request. The system will calculate a score based on your compression time and quality.
+Your solution will be tested each time you push code to GitHub or create a pull request. The system will calculate a score based on weighted mean of compression ratio, inverse of decompression time and quality of decompressed output as compared to original input.
 
 ### Solution Scores
 You can see the score for each build on the `Actions` tab of your repository.
