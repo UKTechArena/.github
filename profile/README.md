@@ -22,4 +22,6 @@ Your solution will be tested each time you push your code to GitHub or create a 
 You can use multiple branches to test different algorithms but only the score for code in the `main` branch will be submitted.
 
 ### Support
-If you need help with something please let us know in the [#support](https://app.slack.com/client/T0447CNHDT2/C046F57C0C8) channel on Slack.
+Check the [FAQs](https://github.com/UKTechArena/.github/blob/main/FAQ.md)
+
+If you still need help with something please let us know in the [#support](https://app.slack.com/client/T0447CNHDT2/C046F57C0C8) channel on Slack.
