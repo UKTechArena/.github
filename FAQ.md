@@ -53,3 +53,19 @@ We calculate the decompression score based on a maximum decompression time of 1 
 **4. Why is the image quality calculation failing?**
 
 This can happen for a number of reasons but most likely either you are missing some dependencies or there is no GPU available to render the images.
+
+## To innovate and develop core part of compression and decompression algorithm
+
+**1. Are external libraries such as Draco allowed in the submissions?**
+
+It seems that Draco alone already gets a score of ~71.5/80 and there isn’t much more to optimise from there.
+
+External libraries for core part of compression and decompression algorithm are not allowed including Draco, zlib/zstd, etc. Draco is just for reference (~65/80).
+
+**2. Are there any requirements for file formats after compression?**
+
+I saw both the AI and non-AI example solutions still have .gltf file formats after compression while the Draco example just uses .drc, I just want to confirm if any file format is allowed after compression or are there required formats.
+
+There are file format requirement due to limitation of automatic evaluation framework, It expects:
+- input and decoded file format need to be .obj or .gltf
+- input and encoded file format should contain the same information along side original and compressed geometry data respectively, to be able to calculate the compression ratio correctly.
