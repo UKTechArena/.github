@@ -56,13 +56,15 @@ This can happen for a number of reasons but most likely either you are missing s
 
 ## To innovate and develop core part of compression and decompression algorithm
 
-**1. Are external libraries such as Draco allowed in the submissions? Draco example gets a score of ~65.5/80 **
+**1. Are external libraries such as Draco allowed in the submissions? Draco example gets a score of ~65.5/80**
 
 External libraries for core part of compression and decompression algorithm are **not allowed** including Draco, zlib/zstd, etc.
 Draco is just for reference (~65/80).
 
-**2. Are there any requirements for file formats after compression? AI and non-AI examples writes .gltf file formats after compression while the Draco example just uses .drc. If any file format is allowed after compression or are there required formats? **
+**2. Are there any requirements for file formats after compression? AI and non-AI examples writes .gltf file formats after compression while the Draco example just uses .drc. If any file format is allowed after compression or are there required formats?**
 
-There are file format requirement **due to limitation of automatic evaluation framework**, It expects:
+There are file format requirement **due to limitation of automatic evaluation framework**, 
+
+It expects:
 - input and decoded file format needs to be .obj or .gltf
 - input and encoded file format should contain the same information along side original and compressed geometry data respectively, to be able to calculate the compression ratio correctly.
