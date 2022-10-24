@@ -32,10 +32,25 @@ The best way to ensure that you understand the problem correctly is to post on t
 Other participants will confirm or comment on your problem statement and the mentors from Huawei will
 confirm or correct any misunderstanding.
 
-**2. What programing language, tech stack or libraries should I use?**
+**2. What programing language should I use?**
 
-We recommend using C++ and/or Python programming language but any language and libraries can be used as
+We recommend using C++ and/or Python programming language but any languages can be used as
 long you can make it to work on fixed testing AWS cloud platform.
+
+**3. Are external libraries such as Draco allowed in the submissions? Draco example gets a score of ~65.5/80**
+
+This challenge expects you to innovate and develop core part of compression and decompression algorithm.
+External libraries for core part of compression and decompression algorithm are **not allowed** including Draco, zlib/zstd, etc.
+Draco is just for reference (~65.5/80).
+
+**4. Are there any requirements for file formats after compression? AI and non-AI examples writes .gltf file formats after compression while the Draco example just uses .drc. If any file format is allowed after compression or are there required formats?**
+
+There are file format requirement **due to limitation of automatic evaluation framework**, 
+
+It expects:
+- input and decoded file format needs to be .obj or .gltf
+- input and encoded file format should contain the same information along side original and compressed geometry data respectively, to be able to calculate the compression ratio correctly.
+
 ## Code submission, scoring & leader board
 
 **1. How frequently can I submit my solution for scoring?**
@@ -53,18 +68,3 @@ We calculate the decompression score based on a maximum decompression time of 1 
 **4. Why is the image quality calculation failing?**
 
 This can happen for a number of reasons but most likely either you are missing some dependencies or there is no GPU available to render the images.
-
-## To innovate and develop core part of compression and decompression algorithm
-
-**1. Are external libraries such as Draco allowed in the submissions? Draco example gets a score of ~65.5/80**
-
-External libraries for core part of compression and decompression algorithm are **not allowed** including Draco, zlib/zstd, etc.
-Draco is just for reference (~65/80).
-
-**2. Are there any requirements for file formats after compression? AI and non-AI examples writes .gltf file formats after compression while the Draco example just uses .drc. If any file format is allowed after compression or are there required formats?**
-
-There are file format requirement **due to limitation of automatic evaluation framework**, 
-
-It expects:
-- input and decoded file format needs to be .obj or .gltf
-- input and encoded file format should contain the same information along side original and compressed geometry data respectively, to be able to calculate the compression ratio correctly.
