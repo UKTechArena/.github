@@ -68,3 +68,12 @@ We calculate the decompression score based on a maximum decompression time of 1 
 **4. Why is the image quality calculation failing?**
 
 This can happen for a number of reasons but most likely either you are missing some dependencies or there is no GPU available to render the images.
+
+**5. I want to ask are we just going to compress the .obj file?**
+
+.obj file can contain a lot of info, not just the geometry or the mesh information but it can contain or appoint to other files like materials or other information.
+So, what we are interested in is focusing on just compressing the mesh or the geometry part, not the whole file itself.
+
+**6. I also had an issue with jq not working on windows**
+
+You can try using WSL on windows to work with all the Linux tools if you are just using windows environment on your local system. The jq can work on WSL, or windows system on Linux so you should be able to use that. If not, then you might have to modify an equivalent Json working script to work through the JSON file.
