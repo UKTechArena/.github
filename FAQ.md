@@ -77,3 +77,9 @@ So, what we are interested in is focusing on just compressing the mesh or the ge
 **6. I also had an issue with jq not working on windows**
 
 You can try using WSL on windows to work with all the Linux tools if you are just using windows environment on your local system. The jq can work on WSL, or windows system on Linux so you should be able to use that. If not, then you might have to modify an equivalent Json working script to work through the JSON file.
+
+**7. How much do the contest value on the originality and creativity?**
+
+We value and encourage students to be original and creative for core part of Compression/Decompression Algorithm design.
+We strongly discourage copying other external solutions for core part of Compression/Decompression Algorithm design.
+We highly encourage solutions to be novel, performant and good quality.
